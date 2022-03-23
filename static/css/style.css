@@ -137,24 +137,7 @@ p{
 
 }
 
-#imagen1{
-    background-color: #3D4655;
 
-}
-
-#imagen2{
-    background-color: #F20707;
-
-}
-
-#imagen3{
-    background-color: aquamarine;
-
-}
-
-#imagen4{
-    background-color: lightcoral;
-}
 
 a{
     text-decoration: none;
@@ -208,6 +191,11 @@ i{
     font-family: Montserrat;
     padding-top: 10px;
 }
+
+.content span{
+    color: #F22613;
+}
+
 .container .box .content p{
     margin: 0;
     padding: 5px;
@@ -239,17 +227,43 @@ h4{
 .info1{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    width: 100vw;
+    padding-left: 250px;
     align-items: center;
 }
 
-
+.info2 {
+    grid-column: 4/10;
+    padding: 80px;
+}
 
 .info1 .id{
     font-size: 100px;
+    padding-bottom: 20px;
 }
 
-.link{
-    font-size: 100px;
-    color: red;
+.imagenst {
+    width: 600px;
+    height: 400px;
+    border: lightblue solid;
+    border-radius: 30px;
+    
+}
+
+
+.cuadro{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    background-color: #BF372A;
+    padding-top: 20px;
+}
+
+.cuadro .p1{
+    padding: 5px;
+    font-size: 15px;
+    color: whitesmoke;
 }
