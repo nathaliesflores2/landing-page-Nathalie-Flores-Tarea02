@@ -7,7 +7,7 @@
     box-sizing: border-box;
   }
 .wrapper {
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     background-color: white;
 }
@@ -213,4 +213,43 @@ i{
     padding: 5px;
     color: white;
     font-size: 14px;
+}
+
+
+/* estadisticas */
+
+
+.stadistics {
+    height: 80vh;
+    width: 100vw;
+    background-color: #3D4655;
+}
+
+.titulo {
+    color: white;
+}
+
+h4{
+    font-size: 17px;
+    color: whitesmoke;
+    font-family: Montserrat;
+    padding: 15px;
+}
+
+.info1{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+
+
+.info1 .id{
+    font-size: 100px;
+}
+
+.link{
+    font-size: 100px;
+    color: red;
 }
