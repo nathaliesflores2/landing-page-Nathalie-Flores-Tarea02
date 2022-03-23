@@ -14,11 +14,13 @@
         </center>
         
     </div>
-        <p>Alemania es un país que se conforma por 16 estados federados, caraterizado por diversidad de estilos de vida y atractivos paisajes. </p>
-        
+        <center>
+            <p>Alemania es un país que se conforma por 16 estados federados, caraterizado por diversidad de estilos de vida y atractivos paisajes. </p>
+        </center>
 
 
 <!--Pantalla de galería-->
+<center>
     <div id="itemCarrusel">
 
 <!--primera imagen-->
@@ -36,7 +38,9 @@
 <!--segunda imagen-->
         <div class="carrusel" id="item2" >
             <div class="tarjetacarrusel" id="imagen2">
-                b
+                <center>
+                    <img class="imagen" src="{{ url_for('static', filename='./images/carrusel2.jpg') }}" alt="">
+                </center>
             </div> 
             <div class="flechas">
                 <a href="#item1"><i class="fa-solid fa-circle-arrow-left"></i></a>
@@ -47,7 +51,9 @@
 <!--tercera imagen-->
         <div class="carrusel" id="item3">
             <div class="tarjetacarrusel" id="imagen3">
-                c
+                <center>
+                    <img class="imagen" src="{{ url_for('static', filename='./images/carrusel3.jpg') }}" alt="">
+                </center>
             </div> 
             <div class="flechas">
                 <a href="#item2"><i class="fa-solid fa-circle-arrow-left"></i></a>
@@ -58,7 +64,9 @@
 <!--cuarta imagen-->
         <div class="carrusel" id="item4">
             <div class="tarjetacarrusel" id="imagen4">
-                e
+                <center>
+                    <img class="imagen" src="{{ url_for('static', filename='./images/carrusel4.jpg') }}" alt="">
+                </center>
             </div> 
             <div class="flechas">
                 <a href="#item3"><i class="fa-solid fa-circle-arrow-left"></i></a>
@@ -68,7 +76,7 @@
 
     </div>
 
-    <!--Puntos-->
+    <!--Puntos
 
     <div id="puntos">
         <a href="#item1"><i class="fa-solid fa-circle"></i></a>
@@ -76,7 +84,52 @@
         <a href="#item3"><i class="fa-solid fa-circle"></i></a>
         <a href="#item4"><i class="fa-solid fa-circle"></i></a>
     </div>
+    -->
+
+    <!--cuadro con información-->
+    
+    <div class="container">
+        <!--first box-->
+        <div class="box">
+           
+            <div class="content">
+                <h4>
+            
+                    Lifestyle
+                </h4>
+                <p>Las personas en Alemania son muy hospitalarias y orgullosas de su cultura. Alemania es un país estable respecto a su coste de vida. Además, se lleva un estilo de vida muy moderno y con altos estándares de vida.</p>
+            </div>
+        </div>
+
+         <!--second box-->
+        <div class="box">
+            
+            <div class="content">
+                <h4>
+                    Arquitectura
+                </h4>
+                <p>Alemania contiene importantes obras de estilos arquitectónicos como gótico, renacentista y barroco. Luego de la Segunda Guerra Mundial, la arquitectura se inclinó a un estilo más moderno.</p>
+            </div>
+        </div>
+
+         <!--third box-->
+        <div class="box">
+           
+            <div class="content">
+                <h4>
+                    Food
+                </h4>
+                <p>
+                    La comida en Alemania tiene influencia de Italia y Francia. Los ingredientes predominantes en sus platos son carnes de cerdos, ternera y embutidos.
+                </p>
+            </div>
+        </div>
+    </div>
+   
+
 </div>
+</center>
+
 
 {% endblock %}
 
