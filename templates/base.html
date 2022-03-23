@@ -9,7 +9,28 @@
 </head>
 <body>
     
-    <h1>nav bar</h1>
+    
+<div class="wrapper">
+        <nav class="navbar">
+            <div class="brand">
+                <h2>ALE<span>MA</span>NIA</h2>
+            </div>
+            <ul class="menu">
+                <li><a class ="lista" href="#"> Inicio</a></li>
+                <li><a class ="lista" href="#">Gallery</a></li>
+                <li><a class ="lista" href="#">Stadistics</a></li>
+                <li><a class ="lista" href="#">Contact us</a></li>
+                <li><a class ="lista" href="#">About me</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <center>
+    <img class="img" src="{{ url_for('static', filename='./images/germany.jpg') }}" alt="">
+    </center>
+</div>
+
+
     {%block contents %} {% endblock %}
 
 </body>
