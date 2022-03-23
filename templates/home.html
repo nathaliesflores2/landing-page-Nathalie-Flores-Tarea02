@@ -6,6 +6,7 @@
 
 {% block contents %}
 
+<!--Pantalla de inicio-->
 <div class="intro">
     <div class="Inicio">
         <center>
@@ -15,8 +16,67 @@
     </div>
         <p>Alemania es un país que se conforma por 16 estados federados, caraterizado por diversidad de estilos de vida y atractivos paisajes. </p>
         
-</div>
 
+
+<!--Pantalla de galería-->
+    <div id="itemCarrusel">
+
+<!--primera imagen-->
+        <div class="carrusel" id="item1" >
+            <div class="tarjetacarrusel" id="imagen1">
+                <center>
+                    <img class="imagen" src="{{ url_for('static', filename='./images/carrusel1.jpg') }}" alt="">
+                </center>
+            </div> 
+            <div class="flechas">
+                <a href="#item4"><i class="fa-solid fa-circle-arrow-left"></i></a>
+                <a href="#item2"><i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div> 
+        </div>
+<!--segunda imagen-->
+        <div class="carrusel" id="item2" >
+            <div class="tarjetacarrusel" id="imagen2">
+                b
+            </div> 
+            <div class="flechas">
+                <a href="#item1"><i class="fa-solid fa-circle-arrow-left"></i></a>
+                <a href="#item3"><i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div> 
+        </div>
+
+<!--tercera imagen-->
+        <div class="carrusel" id="item3">
+            <div class="tarjetacarrusel" id="imagen3">
+                c
+            </div> 
+            <div class="flechas">
+                <a href="#item2"><i class="fa-solid fa-circle-arrow-left"></i></a>
+                <a href="#item4"><i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div> 
+        </div>
+
+<!--cuarta imagen-->
+        <div class="carrusel" id="item4">
+            <div class="tarjetacarrusel" id="imagen4">
+                e
+            </div> 
+            <div class="flechas">
+                <a href="#item3"><i class="fa-solid fa-circle-arrow-left"></i></a>
+                <a href="#item1"><i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div> 
+        </div>
+
+    </div>
+
+    <!--Puntos-->
+
+    <div id="puntos">
+        <a href="#item1"><i class="fa-solid fa-circle"></i></a>
+        <a href="#item2"><i class="fa-solid fa-circle"></i></a>
+        <a href="#item3"><i class="fa-solid fa-circle"></i></a>
+        <a href="#item4"><i class="fa-solid fa-circle"></i></a>
+    </div>
+</div>
 
 {% endblock %}
 
