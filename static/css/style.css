@@ -267,3 +267,53 @@ h4{
     font-size: 15px;
     color: whitesmoke;
 }
+
+/* contact us */
+
+.contact-us{
+    height: 80vh;
+    width: 100vw;
+    background-color: white;
+}
+
+
+.contact-us .m span{
+    color: #F22613;
+    font-family: Satisfy;
+}
+
+.contact-us .bloque{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.contact_form form{
+    margin:0;
+    padding: 1em;
+}
+
+.contact_form form button,
+.contact_form form input,
+.contact_form form textarea{
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid firebrick;
+    outline: none;
+}
+
+.contact_form form button {
+    background: firebrick;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    font-family: Montserrat;
+    font-size: 15px;
+    color:white;
+    font-weight: bold;
+
+}
+

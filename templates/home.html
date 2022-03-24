@@ -34,6 +34,7 @@
                 <a href="#item4"><i class="fa-solid fa-circle-arrow-left"></i></a>
                 <a href="#item2"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div> 
+            
         </div>
 <!--segunda imagen-->
         <div class="carrusel" id="item2" >
@@ -164,11 +165,51 @@
 </div>
 
 
-<!--Pantalla de estadísticas-->
+<!--Pantalla de contacto-->
+
 <div class="contact-us">
+    <center>
+        <h3 class="m">Contact <span>US</span> </h3> 
+         
+    </center>
     <div class="bloque">
+        <div class="contact_form">
+            
+            <form action="">
+                <p>
+                    <label for="firstname">Firstname</label>
+                    <input type="text" name="firstname">
+
+                </p>
+
+                <p>
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" >
+                
+                </p>
+
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" >
+                </p>
+
+                <p>
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="5"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">
+                        Send
+                    </button>
+                </p>
+            </form>
+
+        </div>
+
         
     </div>
+    
 </div>
 
 {% endblock %}
