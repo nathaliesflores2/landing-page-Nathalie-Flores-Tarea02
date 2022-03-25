@@ -7,210 +7,214 @@
 {% block contents %}
 
 <!--Pantalla de inicio-->
-<div class="intro">
-    <div class="Inicio">
-        <center>
-        <h3>Descubre Alemania</h3>
-        </center>
+<section class="gallery" id="gallery">
+    <div class="intro">
+        <div class="Inicio">
+            <center>
+            <h3>Descubre Alemania</h3>
+            </center>
+            
+        </div>
+            <center>
+                <p>Alemania es un país que se conforma por 16 estados federados, caraterizado por diversidad de estilos de vida y atractivos paisajes. </p>
+            </center>
+
+
+    <!--Pantalla de galería-->
+    <center>
+        <div id="itemCarrusel">
+
+    <!--primera imagen-->
+            <div class="carrusel" id="item1" >
+                <div class="tarjetacarrusel" id="imagen1">
+                    <center>
+                        <img class="imagen" src="{{ url_for('static', filename='./images/carrusel1.jpg') }}" alt="">
+                    </center>
+                </div> 
+                <div class="flechas">
+                    <a href="#item4"><i class="fa-solid fa-circle-arrow-left"></i></a>
+                    <a href="#item2"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div> 
+                
+            </div>
+    <!--segunda imagen-->
+            <div class="carrusel" id="item2" >
+                <div class="tarjetacarrusel" id="imagen2">
+                    <center>
+                        <img class="imagen" src="{{ url_for('static', filename='./images/carrusel2.jpg') }}" alt="">
+                    </center>
+                </div> 
+                <div class="flechas">
+                    <a href="#item1"><i class="fa-solid fa-circle-arrow-left"></i></a>
+                    <a href="#item3"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div> 
+            </div>
+
+    <!--tercera imagen-->
+            <div class="carrusel" id="item3">
+                <div class="tarjetacarrusel" id="imagen3">
+                    <center>
+                        <img class="imagen" src="{{ url_for('static', filename='./images/carrusel3.jpg') }}" alt="">
+                    </center>
+                </div> 
+                <div class="flechas">
+                    <a href="#item2"><i class="fa-solid fa-circle-arrow-left"></i></a>
+                    <a href="#item4"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div> 
+            </div>
+
+    <!--cuarta imagen-->
+            <div class="carrusel" id="item4">
+                <div class="tarjetacarrusel" id="imagen4">
+                    <center>
+                        <img class="imagen" src="{{ url_for('static', filename='./images/carrusel4.jpg') }}" alt="">
+                    </center>
+                </div> 
+                <div class="flechas">
+                    <a href="#item3"><i class="fa-solid fa-circle-arrow-left"></i></a>
+                    <a href="#item1"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div> 
+            </div>
+
+        </div>
+
+        <!--Puntos
+
+        <div id="puntos">
+            <a href="#item1"><i class="fa-solid fa-circle"></i></a>
+            <a href="#item2"><i class="fa-solid fa-circle"></i></a>
+            <a href="#item3"><i class="fa-solid fa-circle"></i></a>
+            <a href="#item4"><i class="fa-solid fa-circle"></i></a>
+        </div>
+        -->
+
+        <!--cuadro con información-->
         
-    </div>
-        <center>
-            <p>Alemania es un país que se conforma por 16 estados federados, caraterizado por diversidad de estilos de vida y atractivos paisajes. </p>
-        </center>
-
-
-<!--Pantalla de galería-->
-<center>
-    <div id="itemCarrusel">
-
-<!--primera imagen-->
-        <div class="carrusel" id="item1" >
-            <div class="tarjetacarrusel" id="imagen1">
-                <center>
-                    <img class="imagen" src="{{ url_for('static', filename='./images/carrusel1.jpg') }}" alt="">
-                </center>
-            </div> 
-            <div class="flechas">
-                <a href="#item4"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                <a href="#item2"><i class="fa-solid fa-circle-arrow-right"></i></a>
-            </div> 
+        <div class="container">
+            <!--first box-->
+            <div class="box">
             
+                <div class="content">
+                    <h4>
+                
+                        Lifestyle
+                    </h4>
+                    <p>Las personas en Alemania son muy hospitalarias y orgullosas de su cultura. Alemania es un país estable respecto a su coste de vida. Además, se lleva un estilo de vida muy moderno y con altos estándares de vida.</p>
+                </div>
+            </div>
+
+            <!--second box-->
+            <div class="box">
+                
+                <div class="content">
+                    <h4>
+                        Arquitectura 
+                    </h4>
+                    <p>Alemania contiene importantes obras de estilos arquitectónicos como gótico, renacentista y barroco. Luego de la Segunda Guerra Mundial, la arquitectura se inclinó a un estilo más moderno.</p>
+                </div>
+            </div>
+
+            <!--third box-->
+            <div class="box">
+            
+                <div class="content">
+                    <h4>
+                        Food
+                    </h4>
+                    <p>
+                        La comida en Alemania tiene influencia de Italia y Francia. Los ingredientes predominantes en sus platos son carnes de cerdos, ternera y embutidos.
+                    </p>
+                </div>
+            </div>
         </div>
-<!--segunda imagen-->
-        <div class="carrusel" id="item2" >
-            <div class="tarjetacarrusel" id="imagen2">
-                <center>
-                    <img class="imagen" src="{{ url_for('static', filename='./images/carrusel2.jpg') }}" alt="">
-                </center>
-            </div> 
-            <div class="flechas">
-                <a href="#item1"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                <a href="#item3"><i class="fa-solid fa-circle-arrow-right"></i></a>
-            </div> 
-        </div>
-
-<!--tercera imagen-->
-        <div class="carrusel" id="item3">
-            <div class="tarjetacarrusel" id="imagen3">
-                <center>
-                    <img class="imagen" src="{{ url_for('static', filename='./images/carrusel3.jpg') }}" alt="">
-                </center>
-            </div> 
-            <div class="flechas">
-                <a href="#item2"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                <a href="#item4"><i class="fa-solid fa-circle-arrow-right"></i></a>
-            </div> 
-        </div>
-
-<!--cuarta imagen-->
-        <div class="carrusel" id="item4">
-            <div class="tarjetacarrusel" id="imagen4">
-                <center>
-                    <img class="imagen" src="{{ url_for('static', filename='./images/carrusel4.jpg') }}" alt="">
-                </center>
-            </div> 
-            <div class="flechas">
-                <a href="#item3"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                <a href="#item1"><i class="fa-solid fa-circle-arrow-right"></i></a>
-            </div> 
-        </div>
-
-    </div>
-
-    <!--Puntos
-
-    <div id="puntos">
-        <a href="#item1"><i class="fa-solid fa-circle"></i></a>
-        <a href="#item2"><i class="fa-solid fa-circle"></i></a>
-        <a href="#item3"><i class="fa-solid fa-circle"></i></a>
-        <a href="#item4"><i class="fa-solid fa-circle"></i></a>
-    </div>
-    -->
-
-    <!--cuadro con información-->
     
-    <div class="container">
-        <!--first box-->
-        <div class="box">
-           
-            <div class="content">
-                <h4>
-            
-                    Lifestyle
-                </h4>
-                <p>Las personas en Alemania son muy hospitalarias y orgullosas de su cultura. Alemania es un país estable respecto a su coste de vida. Además, se lleva un estilo de vida muy moderno y con altos estándares de vida.</p>
-            </div>
-        </div>
 
-         <!--second box-->
-        <div class="box">
-            
-            <div class="content">
-                <h4>
-                    Arquitectura 
-                </h4>
-                <p>Alemania contiene importantes obras de estilos arquitectónicos como gótico, renacentista y barroco. Luego de la Segunda Guerra Mundial, la arquitectura se inclinó a un estilo más moderno.</p>
-            </div>
-        </div>
-
-         <!--third box-->
-        <div class="box">
-           
-            <div class="content">
-                <h4>
-                    Food
-                </h4>
-                <p>
-                    La comida en Alemania tiene influencia de Italia y Francia. Los ingredientes predominantes en sus platos son carnes de cerdos, ternera y embutidos.
-                </p>
-            </div>
-        </div>
     </div>
-   
-
-</div>
-</center>
-
+    </center>
+</section>
 
 
 
 <!--Pantalla de estadísticas-->
-
-<div class="stadistics">
-    <div class="grafico">
-        <div class="info1">
-            <center>
-                <h3 class="titulo">Stadistics</h3> <i class="id fa-solid fa-chart-line"></i>
-                <div class="cuadro">
-                    <p class="p1">
-                        A lo largo de los años, Alemania ha aumenta su esperanza de vida y al mismo tiempo, dismunido su tasa de mortalidad.
-                    </p>
-                </div>
-                
-            </center>
-            <div class="info2">
+<section class="estadistica" id="estadistica">
+    <div class="stadistics">
+        <div class="grafico">
+            <div class="info1">
                 <center>
-                    <h4>Número de habitantes de Alemania entre 2008 a 2020</h4>
-                    <a class ="link" href="https://es.statista.com/estadisticas/724659/evolucion-de-la-poblacion-de-alemania/" >
-                        <img class="imagenst" src="{{ url_for('static', filename='./images/poblacion.png') }}" alt="">
-                    </a>  
+                    <h3 class="titulo">Stadistics</h3> <i class="id fa-solid fa-chart-line"></i>
+                    <div class="cuadro">
+                        <p class="p1">
+                            A lo largo de los años, Alemania ha aumenta su esperanza de vida y al mismo tiempo, dismunido su tasa de mortalidad.
+                        </p>
+                    </div>
+                    
                 </center>
+                <div class="info2">
+                    <center>
+                        <h4>Número de habitantes de Alemania entre 2008 a 2020</h4>
+                        <a class ="link" href="https://es.statista.com/estadisticas/724659/evolucion-de-la-poblacion-de-alemania/" target="_blank" >
+                            <img class="imagenst" src="{{ url_for('static', filename='./images/poblacion.png') }}" alt="">
+                        </a>  
+                    </center>
+                </div>
             </div>
+            
+            
+            
         </div>
-        
-        
-        
-    </div>
 
-</div>
+    </div>
+</section>
 
 
 <!--Pantalla de contacto-->
-
-<div class="contact-us">
-    <center>
-        <h3 class="m">Contact <span>US</span> </h3> 
-         
-    </center>
-    <div class="bloque">
-        <div class="contact_form">
+<section class="contact" id="contact">
+    <div class="contact-us">
+        <center>
+            <h3 class="m">Contact <span>US</span> </h3> 
             
-            <form action="">
-                <p>
-                    <label for="firstname">Firstname</label>
-                    <input type="text" name="firstname">
-
-                </p>
-
-                <p>
-                    <label for="lastname">Lastname</label>
-                    <input type="text" name="lastname" >
+        </center>
+        <div class="bloque">
+            <div class="contact_form">
                 
-                </p>
+                <form action="">
+                    <p>
+                        <label for="firstname">Firstname</label>
+                        <input type="text" name="firstname">
 
-                <p>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" >
-                </p>
+                    </p>
 
-                <p>
-                    <label for="message">Message</label>
-                    <textarea name="message" rows="5"></textarea>
-                </p>
+                    <p>
+                        <label for="lastname">Lastname</label>
+                        <input type="text" name="lastname" >
+                    
+                    </p>
 
-                <p>
-                    <button type="submit">
-                        Send
-                    </button>
-                </p>
-            </form>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" >
+                    </p>
 
+                    <p>
+                        <label for="message">Message</label>
+                        <textarea name="message" rows="5"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">
+                            Send
+                        </button>
+                    </p>
+                </form>
+
+            </div>
+
+            
         </div>
-
         
     </div>
-    
-</div>
+
+</section>
 
 <!--Pantalla de about me-->
 
