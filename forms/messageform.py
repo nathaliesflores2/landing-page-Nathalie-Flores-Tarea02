@@ -22,7 +22,7 @@ class FormMessage(FlaskForm):
     email = StringField(
         validators=[
             InputRequired(),
-            Length(min=5, max=200),
+            Length(min=3, max=200),
         ],
         render_kw={"placeholder": "Email"},
     )

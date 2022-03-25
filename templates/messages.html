@@ -1,6 +1,6 @@
 {% extends './base.html' %}
 
-{% block title %} message page {% endblock %}
+{% block title %} Message Page {% endblock %}
 
 {% block contents %}
 
@@ -28,7 +28,7 @@
                     <th>Email</th>
                     <th>Mensaje</th>
                 </tr>
-                {% for i in listamensaje %}
+                {% for message in listamensaje %}
                 <tr>
                     <td>{{ message["id"] }}</td>
                     <td>{{ message["firstname"] }}</td>
