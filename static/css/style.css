@@ -271,9 +271,10 @@ h4{
 /* contact us */
 
 .contact-us{
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     background-color: white;
+    
 }
 
 
@@ -314,6 +315,77 @@ h4{
     font-size: 15px;
     color:white;
     font-weight: bold;
+    padding-bottom: 10px;
 
 }
 
+/* about me */
+
+.aboutme{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    height: 80hw;
+    align-items: center;
+    background-color: #F2A007;
+
+}
+
+.about{
+    font-family: Montserrat;
+    color: lavenderblush;
+}
+
+.aboutme img{
+    width: 100%;
+    grid-column: 2/5;
+    border-radius: 10px;
+    border: #BF372A solid 5px;
+}
+
+.about-intro {
+    grid-column: 5/10;
+    padding: 100px;
+}
+
+.about-intro h2{
+    font-size: 35px;
+}
+
+.about-intro span{
+    color: #BF372A;
+    font-family: Caveat;
+}
+
+.divisor {
+    margin-top: 20px;
+}
+
+.about-intro p{
+    margin-bottom: 5px;
+}
+
+.about-intro p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 17px;
+    color:black;
+    
+}
+
+.boton{
+    padding: 10px;
+    background-color: #3D4655;
+    border: #3D4655 solid 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    margin-left: 350px;
+    
+
+}
+
+.link2{
+    font-family:'Montserrat' ;
+    color: white
+}
