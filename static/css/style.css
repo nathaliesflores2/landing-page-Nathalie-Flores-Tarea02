@@ -256,7 +256,7 @@ h4{
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
-    width: 250px;
+    width: 100px;
     height: 150px;
     background-color: #BF372A;
     padding-top: 20px;
@@ -293,6 +293,9 @@ h4{
 .contact_form form{
     margin:0;
     padding: 1em;
+    font-family: Josefin Sans;
+    font-size: 20px;
+  
 }
 
 .contact_form form button,
@@ -461,3 +464,56 @@ h5 {
     size: 1000px;
     padding: 5px;
 }
+
+/* tabla*/
+
+.cuadro {
+    width: 100vw;
+    height: 100hw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:white ;
+}
+
+h1{
+    padding-bottom: 20px;
+    font-family:Josefin Sans ;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: black;
+    
+    width: 300px;
+}
+
+th{
+  color: white;
+  font-family: Montserrat;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: #BF372A;
+  
+}
+
+/*centrar los elementos de la tabla*/
+td{
+  padding: 10px;
+  font-size: 14px;
+}
+
+/*ancho de columnas*/
+table td:first-child {
+    width: 50%;
+  }
+
+  table td:nth-child(2) {
+    width: 50%;
+  }
+
+  table td:last-child {
+    width: 50%;
+  }

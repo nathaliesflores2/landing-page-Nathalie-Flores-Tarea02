@@ -5,6 +5,44 @@
 {% block contents %}
 
 
-<h1>Mensajes enviados</h1>
 
-{% endblock %}
+
+{% block customCSS %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock customCSS %}
+
+
+
+<div class="cuadro">
+   
+    <h1>Mensajes enviados</h1>
+     
+
+    <div>
+        <center>
+            <table id="messages">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Mensaje</th>
+                </tr>
+                {% for i in listamensaje %}
+                <tr>
+                    <td>{{ message["id"] }}</td>
+                    <td>{{ message["firstname"] }}</td>
+                    <td>{{ message["lastname"] }}</td>
+                    <td>{{ message["email"] }}</td>
+                    <td>{{ message["message"] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </center>
+    </div>
+</div>
+
+
+{% endblock contents %}
+
+{% block customScripts %}{% endblock customScripts %}

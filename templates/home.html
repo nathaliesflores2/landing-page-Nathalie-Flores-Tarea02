@@ -142,11 +142,7 @@
             <div class="info1">
                 <center>
                     <h3 class="titulo">Stadistics</h3> <i class="id fa-solid fa-chart-line"></i>
-                    <div class="cuadro">
-                        <p class="p1">
-                            A lo largo de los años, Alemania ha aumenta su esperanza de vida y al mismo tiempo, dismunido su tasa de mortalidad.
-                        </p>
-                    </div>
+                    
                     
                 </center>
                 <div class="info2">
@@ -176,37 +172,20 @@
         </center>
         <div class="bloque">
             <div class="contact_form">
-                
-                <form action="">
-                    <p>
-                        <label for="firstname">Firstname</label>
-                        <input type="text" name="firstname">
-
-                    </p>
-
-                    <p>
-                        <label for="lastname">Lastname</label>
-                        <input type="text" name="lastname" >
-                    
-                    </p>
-
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" >
-                    </p>
-
-                    <p>
-                        <label for="message">Message</label>
-                        <textarea name="message" rows="5"></textarea>
-                    </p>
-
-                    <p>
-                        <button type="submit">
-                            Send
-                        </button>
-                    </p>
+                <br>
+                <form action="{{ url_for('site.new_message') }}" method="post">
+                    {{ form.hidden_tag() }}
+                    {{ form.firstname.label}}
+                    {{ form.firstname}}
+                    {{ form.lastname.label}}
+                    {{ form.lastname}}
+                    {{ form.email.label}}
+                    {{ form.email}}
+                    {{ form.message.label}}
+                    {{ form.message}}
+                    {{ form.submit }}
                 </form>
-
+                <br>
             </div>
 
             
