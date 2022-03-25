@@ -295,6 +295,7 @@ h4{
     padding: 1em;
     font-family: Josefin Sans;
     font-size: 20px;
+    
   
 }
 
@@ -307,19 +308,37 @@ h4{
     background: none;
     border-bottom: 1px solid firebrick;
     outline: none;
+    padding-top: 20px;
+    
+   
 }
 
-.contact_form form button {
-    background: firebrick;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
+.firstname{
+    padding: 20px;
+}
+
+.lastname{
+    padding: 20px;
+}
+
+.contact_form .email{
+    padding: 20px;
+}
+
+.contact_form .message{
+    padding: 20px;
+}
+
+
+
+::placeholder {
+    
     font-family: Montserrat;
     font-size: 15px;
-    color:white;
-    font-weight: bold;
-    padding-bottom: 10px;
+}
 
+.contact_form .submit{
+    font-family: Montserrat;
 }
 
 /* about me */
